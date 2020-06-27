@@ -1,8 +1,8 @@
-name: "eks-iam-authenticate-kubectl"
-description: "Interacts with kubernetes clusters calling kubectl commands. Integrates support for AWS EKS."
+name: "kubectl-actions"
+description: "Github actions for automating kubectl commands."
 branding:
-  icon: 'anchor'  
-  color: 'blue'
+  icon: "anchor"
+  color: "blue"
 inputs:
   args:
     description: "Arguments of kubectl"

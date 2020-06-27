@@ -6,7 +6,7 @@ Github actions for automating kubectl commands. It has support for EKS cluster w
 
 ```yml
 
-name: CI
+name: Push
 
 on:
   - push
