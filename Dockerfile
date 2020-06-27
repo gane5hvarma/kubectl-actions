@@ -8,5 +8,6 @@ RUN curl -L -o /usr/bin/aws-iam-authenticator https://amazon-eks.s3.us-west-2.am
 RUN chmod +x /usr/bin/aws-iam-authenticator
 RUN curl -L -o /usr/bin/kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.15.10/2020-02-22/bin/linux/amd64/kubectl
 RUN chmod +x /usr/bin/kubectl
-COPY entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
