@@ -19,8 +19,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Create/Modify deployment
-        uses: gane5hvarma/eks-iam-authenticate-kubectl@master
+        uses: gane5hvarma/kubectl-actions@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
         with:
           args: apply -f deployment.yaml
+
+> KUBE_CONFIG_DATA should be base64 encoded before saving in secrets
