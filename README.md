@@ -25,4 +25,5 @@ jobs:
         with:
           args: apply -f deployment.yaml
 
+```
 > KUBE_CONFIG_DATA should be base64 encoded before saving in secrets
